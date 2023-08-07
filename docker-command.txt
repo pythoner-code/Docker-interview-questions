@@ -1,0 +1,15 @@
+systemctl start docker
+
+docker ps
+
+docker images
+
+docker build . -t java-app    =    build docker image from the file in this directory which has tag or name java-app
+
+docker pull mysql:latest           =    pull used to get image from docker hub
+
+docker run -d -e MYSQL_ROOT_PASSWORD=test@123 mysql:latest     =  run image(conainer) in detach mode in an environment
+
+docker -exec -it <container_id> sh    =   run container in your interactive shell(-it)
+
+
